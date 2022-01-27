@@ -297,6 +297,7 @@ nav ul li a:hover {
     font-weight: 600;
     font-size: 0.9rem;
     color: #5a76fd;
+    margin: 0px;
 }
 
 .box a:hover {
@@ -424,5 +425,118 @@ nav .menu-btn {
         height: 45vh;
         background-color: rgba(33, 33, 33, 0.35);
         margin: 0px;
+    }
+
+    .home-content {
+        width: 100%;
+        margin: 0px;
+        position: static;
+        transform: translate(0px, 70px);
+        background-image: url(../images/bg2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top right;
+        box-shadow: 2px 2px 30px rgba(90, 118, 253, 0.15);
+    }
+
+    .home-text h1 {
+        color: #fff;
+        padding: 0px 20px;
+        font-size: 2.5rem;
+        border: 1px solid #fff;
+    }
+
+    .home-text p {
+        color: rgba(255, 255, 255, 0.85);
+        margin: 10px 0px 20px 0px;
+        width: 50%;
+    }
+
+    .arrow {
+        height: 70px;
+    }
+
+    .main {
+        background-size: 500px;
+    }
+
+    .timing, .arrow, .scroll {
+        bottom: 40px;
+    }
+}
+
+@media(max-width: 720px) {
+
+    .home-text p {
+        width: 70%;
+        text-align: center;
+    }
+
+    .office-number,
+    .office-time {
+        flex-grow: 1;
+        margin: 10px;
+    }
+
+    .office-number h3,
+    .office-time h3 {
+        font-size: 1rem;
+    }
+
+    .office-number p,
+    .office-time p {
+        font-size: 0.8rem;
+        
+    }
+
+    .arrow, .scroll {
+        display: none;
+    }
+    .home-content h1 {
+        font-size: 1.9rem;
+        padding: 10px 10px;
+        line-height: 30px;
+    }
+
+    .timing {
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 0px;
+        padding: 0px 20px;
+    }
+
+    .services-heading {
+        margin: 20px;
+    }
+
+    .services-heading h2 {
+        font-size: 1.7rem;
+        line-height: 40px;
+    }
+
+    .services-heading p {
+        width: 100%;
+    }
+
+    .box {
+        width: 100%;
+        margin: 20px 0px !important;
+        padding: 0px 20px;
+        flex-grow: 1;
+    }
+
+    .box img {
+        height: 100px;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .footer {
+        padding: 0px 10px;
+    }
+
+    .footer p, a {
+        font-size: 0.9rem;
+        text-align: center;
     }
 }
